@@ -1,0 +1,57 @@
+.todo-list li .view {
+    position: relative;
+}
+.todo-list li .view:hover .destroy{
+    display: block;
+}
+.todo-list li .toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    margin: auto 0;
+}
+.todo-list li.completed label {
+    text-decoration: line-through;
+}
+.todo-list li label{
+    word-break: break-all;
+    display: block;
+    padding: 15px 45px 15px 60px;
+    font-size: 22px;
+}
+.todo-list li .toggle+label{
+    background-image: url('../../unfinished.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.todo-list li .toggle:checked+label{
+    background-image: url('../../finished.svg');
+}
+.todo-list li .destroy {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+    background-color: transparent;
+    cursor: pointer;
+    color: salmon;
+    display: none;
+}
+.todo-list li .destroy:hover {
+    color: red;
+}
+.edit {
+    display: none;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 24px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}

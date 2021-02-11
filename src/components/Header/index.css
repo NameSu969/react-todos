@@ -1,0 +1,37 @@
+.header {
+    position: relative;
+    overflow: hidden;
+}
+.header .ipt{
+    height: 65px;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 25px 15px 65px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    color: #777;
+}
+.header .toggle-all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.header .toggle-all + label {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    height: 50px;
+    width: 65px;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.header .toggle-all + label::before {
+    content: '>';
+    font-size: 28px;
+    color: #e6e6e6;
+}
